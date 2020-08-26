@@ -1,0 +1,7 @@
+<h1><%= @project.title %></h1>
+<p>
+    <strong>Description:</strong><br/>
+    <%= @project.description%>
+</p>
+
+<%= button_to "Trash Project", @project, :method => :delete %>

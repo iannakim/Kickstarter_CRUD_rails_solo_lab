@@ -1,0 +1,10 @@
+<h1> Wanna tweak your project?</h1>
+<h2>second (third) time is the charm :)</h2>
+
+<%= form_for @project do |f| %>
+  <%= f.label :title %><br/>
+  <%= f.text_field :title %> <br/>
+  <%= f.label :description %><br/>
+  <%= f.text_area :description %><br/>
+  <%= f.submit "Submit!" %>
+<% end %>

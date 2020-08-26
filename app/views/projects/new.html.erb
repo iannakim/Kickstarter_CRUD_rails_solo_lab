@@ -1,0 +1,10 @@
+<h1> Wanna create a new project?</h1>
+<h2>Don't leave out any details!</h2>
+
+<%= form_for @project do |f| %>
+  <%= f.label :title %><br/>
+  <%= f.text_field :title %> <br/>
+  <%= f.label :description %><br/>
+  <%= f.text_area :description %><br/>
+  <%= f.submit "Submit!" %>
+<% end %>

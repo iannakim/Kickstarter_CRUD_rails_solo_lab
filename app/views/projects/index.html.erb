@@ -1,0 +1,7 @@
+<h1>Current Projects:</h1>
+
+<ul>
+    <% @projects.map do |project_var|%>
+        <li> <%= link_to project_var.title, project_path(project_var)%> </li>
+    <%end%>
+</ul>
