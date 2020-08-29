@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   
   get "/projects", to: "projects#index", as: "projects" #projects_path
-  get "/projects/new", to: "projects#new", as: "new_student"
+  get "/projects/new", to: "projects#new", as: "new_project"
   post "/projects", to: "projects#create"
   get "/projects/:id", to: "projects#show", as: "project" #project_path(id) or an instance project_path(@project)
   get '/projects/:id/edit', to: 'projects#edit', as: 'edit_project'

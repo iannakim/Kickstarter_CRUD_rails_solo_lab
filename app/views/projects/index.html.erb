@@ -1,7 +1,11 @@
-<h1>Current Projects:</h1>
+<head><img src="https://andrewlock.net/content/images/2017/04/banner.png" width="500" height="320" alt="Edit Entry" /></head>
+<h1>Anna's Current Projects:</h1>
 
 <ul>
     <% @projects.map do |project_var|%>
         <li> <%= link_to project_var.title, project_path(project_var)%> </li>
     <%end%>
 </ul>
+<p>
+<%= link_to "Create A New Project!", new_project_path%>
+</p>

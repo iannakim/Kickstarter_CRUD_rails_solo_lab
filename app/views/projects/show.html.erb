@@ -1,7 +1,11 @@
+<head><img src="https://i.pinimg.com/originals/f0/57/32/f05732292207420906ee47be71ff7c80.png" width="200" height="150" alt="Edit Entry" /></head>
 <h1><%= @project.title %></h1>
 <p>
-    <strong>Description:</strong><br/>
+    <strong>Project Description:</strong><br/>
     <%= @project.description%>
 </p>
 
 <%= button_to "Trash Project", @project, :method => :delete %>
+<p>
+<%= link_to "Back to All Projects", projects_path%>
+</p>
